@@ -10,12 +10,28 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <EditText
-        android:id="@+id/input_edittext"
+    <!-- 包含輸入框和新增按鈕的水平佈局 -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
-        android:imeOptions="actionDone"
-        android:autofillHints="text" />
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="text"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:hint="請輸入您的食物偏好！" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增" />
+
+    </LinearLayout>
 
 </LinearLayout>

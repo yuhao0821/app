@@ -1,8 +1,11 @@
+package com.example.eatttttttttt;
+
+import static dev.langchain4j.model.openai.OpenAiChatModelName.GPT_3_5_TURBO;
 import static dev.langchain4j.model.openai.OpenAiChatModelName.GPT_4_O_MINI;
 import static dev.langchain4j.model.openai.OpenAiChatModelName.GPT_4_O;
 import dev.langchain4j.model.openai.OpenAiChatModel;
 
-public class chatgpt {
+public class ChatGPT {
 
     public static void main(String[] args) {
         // 调用方法生成答案
@@ -18,7 +21,7 @@ public class chatgpt {
         // 配置 OpenAiChatModel
         OpenAiChatModel model = OpenAiChatModel.builder()
                 .apiKey(apiKey)
-                .modelName(GPT_4_O) // 使用 GPT-4 的模型
+                .modelName(GPT_4_O_MINI) // 使用 GPT-4 的模型
                 .build();
 
         // 生成回答
